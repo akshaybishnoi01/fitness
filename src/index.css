@@ -1,13 +1,241 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --fs-xsm-: 14px;
+  --fs-sm-: 16px;
+  --fs-xmd-: 18px;
+  --fs-md-: 20px;
+  --fs-xlg-: 26.4px;
+  --fs-lg-: 30px;
+  --fs-xl-: 32px;
+  --fs-xxl-: 35px;
+  --fs-xxxl-: 45px;
+  --fs-xl2-: 47px;
+  --line-14: 14px;
+  --line-21: 21px;
+  --line-23: 23px;
+  --line-24: 24px;
+  --line-26: 26px;
+  --line-27: 27px;
+  --line-28: 28px;
+  --line-30: 30px;
+  --line-33: 33px;
+  --line-35: 35px;
+  --line-36: 36px;
+  --line-37: 37px;
+  --line-49: 49.65px;
+  --line-56: 56px;
+  --line-59: 59.4px;
+  --line-62: 62px;
+  --color-emphasis-: rgba(242, 242, 243, 1);
+  --color-secondary-: rgba(252, 229, 0, 1);
+  --color-tertiary-: rgba(0, 0, 0, 1);
+  --color-lightwh-: rgba(242, 242, 243, 1);
+  --color-bgcol-: #0F0F0F;
+  --color-bgsecondary-: #140D1B;
+  --color-bgtertiary-: #707070;
+  --color-btn-: #1219D2;
+  --color-bgblack-: #010101;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.fs-14 {
+  font-size: var(--fs-xsm-);
+}
+
+.fs-16 {
+  font-size: var(--fs-sm-);
+}
+
+.fs-18 {
+  font-size: var(--fs-xmd-);
+}
+
+.fs-20 {
+  font-size: var(--fs-md-);
+}
+
+.fs-26 {
+  font-size: var(--fs-xlg-);
+}
+
+.fs-30 {
+  font-size: var(--fs-lg-);
+}
+
+.fs-32 {
+  font-size: var(--fs-xl-);
+}
+
+.fs-35 {
+  font-size: var(--fs-xxl-);
+}
+
+.fs-45 {
+  font-size: var(--fs-xxxl-);
+}
+
+.fs-47 {
+  font-size: var(--fs-xl2-);
+}
+
+.line-14 {
+  line-height: var(--line-14);
+}
+
+.line-21 {
+  line-height: var(--line-21);
+}
+
+.line-23 {
+  line-height: var(--line-23);
+}
+
+.line-24 {
+  line-height: var(--line-24);
+}
+
+.line-26 {
+  line-height: var(--line-26);
+}
+
+.line-27 {
+  line-height: var(--line-27);
+}
+
+.line-28 {
+  line-height: var(--line-28);
+}
+
+.line-30 {
+  line-height: var(--line-30);
+}
+
+.line-33 {
+  line-height: var(--line-33);
+}
+
+.line-35 {
+  line-height: var(--line-35);
+}
+
+.line-36 {
+  line-height: var(--line-36);
+}
+
+.line-37 {
+  line-height: var(--line-37);
+}
+
+.line-49 {
+  line-height: var(--line-49);
+}
+
+.line-56 {
+  line-height: var(--line-56);
+}
+
+.line-59 {
+  line-height: var(--line-59);
+}
+
+.--line-62 {
+  line-height: var(--line-62);
+}
+
+.color_emphasis {
+  color: var(--color-emphasis-);
+}
+
+.color_secondary {
+  color: var(--color-secondary-);
+}
+
+.color_tertiary {
+  color: var(--color-tertiary-);
+}
+
+.color_white {
+  color: var(--color-white-);
+}
+
+.color_lightwh {
+  color: var(--color-lightwh-);
+}
+
+.col-colbg {
+  color: var(--color-bgcol-);
+}
+
+.color-bg {
+  color: var(--color-bgsecondary-);
+}
+
+.color_ter {
+  color: var(--color-bgtertiary-);
+}
+
+.color_btn {
+  color: var(--color-btn-);
+}
+
+.bg_black {
+  color: var(--color-bgblack-);
+}
+
+@media (max-width:992px) {
+  :root {
+    --fs-xsm-: 14px;
+    --fs-sm-: 16px;
+    --fs-xmd-: 18px;
+    --fs-md-: 20px;
+    --fs-xlg-: 24px;
+    --fs-lg-: 26px;
+    --fs-xl-: 28px;
+    --fs-xxl-: 32px;
+    --fs-xxxl-: 38px;
+    --line-14: 14px;
+    --line-21: 21px;
+    --line-23: 23px;
+    --line-24: 24px;
+    --line-26: 26px;
+    --line-27: 27px;
+    --line-28: 28px;
+    --line-30: 30px;
+    --line-33: 33px;
+    --line-35: 35px;
+    --line-36: 36px;
+    --line-37: 37px;
+    --line-49: 40px;
+    --line-56: 45px;
+    --line-59: 50px;
+    --line-62: 55px;
+  }
+}
+
+@media (max-width:576px) {
+  :root {
+    --fs-xsm-: 10px;
+    --fs-sm-: 12px;
+    --fs-xmd-: 15px;
+    --fs-md-: 18px;
+    --fs-xlg-: 20px;
+    --fs-lg-: 22px;
+    --fs-xl-: 25px;
+    --fs-xxl-: 28px;
+    --fs-xxxl-: 30px;
+    --line-14: 12px;
+    --line-21: 18px;
+    --line-23: 20px;
+    --line-24: 22px;
+    --line-26: 24px;
+    --line-27: 25px;
+    --line-28: 26px;
+    --line-30: 28px;
+    --line-33: 30px;
+    --line-35: 32px;
+    --line-36: 34px;
+    --line-37: 35px;
+    --line-49: 37px;
+    --line-56: 40px;
+    --line-59: 44px;
+    --line-62: 48px;
+  }
 }
